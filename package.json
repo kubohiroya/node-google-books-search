@@ -4,8 +4,9 @@
   "description": "A lightweight node wrapper for the Google Books API.",
   "main": "./lib/google-books-search.js",
   "dependencies": {
-    "extend":"",
-    "querystring":""
+    "extend": "",
+    "lodash": "^2.4.1",
+    "querystring": ""
   },
   "devDependencies": {
     "mocha": "1.x.x",
