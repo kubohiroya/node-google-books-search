@@ -76,6 +76,6 @@ The search method optionally accepts an options object as the second argument. S
 `limit` : The maximum number of results to return (Max 40) (Defult: 10)   
 `type` : Restrict results to books or magazines (Default: all)   
 `order` : Order results by relevance or newest (Default: relevance)   
-`lang` : Restrict results to a specified language (two-letter ISO-639-1 code) (Default: en)   
+`lang` : Restrict results to a specified language (two-letter ISO-639-1 code) (Default: none)
 
 For more info please see the [Google Books API documentation](http://code.google.com/apis/books/docs/v1/using.html)
