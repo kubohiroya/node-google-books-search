@@ -47,12 +47,13 @@ Returns an array of JSON objects. For example;
 ## Advanced Usage
 
 The search method optionally accepts an options object as the second argument. See below for an overview of the available options.
+You can't omit the query object, but you can pass an empty string if you provide some fields for the options object.
 
 	var books = require('google-books-search');
 
 	var options = {
 		key: "YOUR API KEY",
-		field: 'title',
+		fields: { title: 'Harry Potter and the goblet of fire', author: 'Rownling' ...},
 		offset: 0,
 		limit: 10,
 		type: 'books',
