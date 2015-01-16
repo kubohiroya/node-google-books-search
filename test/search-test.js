@@ -50,10 +50,30 @@ describe('Searching', function() {
 		});
 	});
 
-	it('should return an error if no query is specified', function(done) {
-		books.search(null, {}, function(error, results) {
-			should.exist(error);
-			should.not.exist(results);
+	it('should accept multiple fields (no query)', function(done) {
+		books.search('', {
+			fields: {
+				author:'Rowling',
+				title:'Harry Potter and the prisoner of Azkaban'
+			}
+		}, function(error, results) {
+			should.not.exist(error);
+			should.exist(results);
+			results[0].should.have.property('title');
+			done();
+		});
+	});
+
+	it('should accept multiple fields (with query)', function(done) {
+		books.search('Hello', {
+			fields: {
+				author:'Rowling',
+				title:'Harry Potter and the prisoner of Azkaban'
+			}
+		}, function(error, results) {
+			should.not.exist(error);
+			should.exist(results);
+			results[0].should.have.property('title');
 			done();
 		});
 	});
