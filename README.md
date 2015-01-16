@@ -53,7 +53,7 @@ You can't omit the query object, but you can pass an empty string if you provide
 
 	var options = {
 		key: "YOUR API KEY",
-		fields: { title: 'Harry Potter and the goblet of fire', author: 'Rownling' ...},
+		fields: { title: 'Harry Potter and the goblet of fire', author: 'Rowling' ...},
 		offset: 0,
 		limit: 10,
 		type: 'books',
